@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AboutTitleTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_title" />
+
+                    <TextView
+                        style="@style/DescriptionTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/business_description" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View style="@style/SpaceStyle" />
+
+            <android.support.v7.widget.CardView style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AboutTitleTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opening_hours_title" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/monday_times"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/day_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="Monday:" />
+
+                            <TextView
+                                android:id="@+id/day_one_times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="9am - 5pm" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tuesday_times"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/day_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="Tuesday:" />
+
+                            <TextView
+                                android:id="@+id/day_two_times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="9am - 5pm" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/wednesday_times"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/day_three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="Wednesday:" />
+
+                            <TextView
+                                android:id="@+id/day_three_times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="9am - 5pm" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/thursday_times"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/day_four"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="Thursday:" />
+
+                            <TextView
+                                android:id="@+id/day_four_times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="9am - 5pm" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/friday_times"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/day_five"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="Friday:" />
+
+                            <TextView
+                                android:id="@+id/day_five_times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="@style/DescriptionTextStyle"
+                                tools:text="9am - 5pm" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View style="@style/SpaceStyle" />
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AboutTitleTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coming_soon_title" />
+
+                    <TextView
+                        style="@style/DescriptionTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coming_soon_desc" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

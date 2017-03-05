@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Java Coffee Shop</string>
+    <string name="business_description">Located in the scenic town of ExampleVille, The Java Bean
+        coffee store is transforming the way locals experience their coffee each and every day.</string>
+    <string name="call_btn_desc">Call</string>
+    <string name="email_btn_desc">Email</string>
+    <string name="map_btn_desc">Show on map</string>
+    <string name="coming_soon_desc"> - Order your coffee from the app \n- Enter competitions</string>
+    <string name="coming_soon_title">Coming Soon:</string>
+    <string name="about_title">About:</string>
+    <string name="opening_hours_title">Opening Hours:</string>
+    <string name="business_name">The Java Bean</string>
+    <string name="email_address">enquiries@TheJavaBean.com</string>
+    <string name="email_subject">Enquiry</string>
+    <string name="email_chooser_title">Send Email</string>
+    <string name="fake_location"><![CDATA[geo:40.6449901,-74.0850855&]]></string>
+    <string name="tel_uri_code">tel:</string>
+    <string name="phone_number">+19175341397</string>
+    <string name="permissions_toast">You must allow Call Permissions to call</string>
+    <string-array name="days_of_week">
+        <item>Monday:</item>
+        <item>Tuesday:</item>
+        <item>Wednesday:</item>
+        <item>Thursday:</item>
+        <item>Friday:</item>
+    </string-array>
+
+    <string-array name="times_of_week">
+        <item>8am - 5pm</item>
+        <item>8am - 5pm</item>
+        <item>8am - 9pm</item>
+        <item>8am - 10pm</item>
+        <item>8am - 10pm</item>
+    </string-array>
+</resources>

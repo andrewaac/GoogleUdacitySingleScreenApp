@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/about_button"
+        android:icon="@drawable/coffee_icon"
+        android:title="About" />
+
+    <item
+        android:id="@+id/contact_button"
+        android:icon="@drawable/contact_icon"
+        android:title="Contact"/>
+
+</menu>
